@@ -75,7 +75,7 @@ During this workshop, we will focus on one month of the New York City Taxi Recor
 
    ii. Click on the **Add Database** button. 
 
-   iii. Enter the Database name as **nycitytaxianalysis-reinv17**. You can skip the description and location fields and click on **Create**. 
+   iii. Enter the Database name as **nycitytaxianalysis-username**. You can skip the description and location fields and click on **Create**. 
 
 3. Click on **Crawlers** under Data Catalog column on the left. 
 
@@ -83,7 +83,7 @@ During this workshop, we will focus on one month of the New York City Taxi Recor
 
    i. Click on **Add Crawler** button. 
 
-   ii. Under Add information about your crawler, for Crawler name type **nycitytaxianalysis-crawler-reinv17**. You can skip the Description and Classifiers field and click on **Next**. 
+   ii. Under Add information about your crawler, for Crawler name type **nycitytaxianalysis-crawler-username**. You can skip the Description and Classifiers field and click on **Next**. 
 
    iii. Under Data Store, choose S3. And Ensure the radio button for **Crawl Data in Specified path** is checked. 
 
@@ -105,9 +105,9 @@ During this workshop, we will focus on one month of the New York City Taxi Recor
 
    viii. Configure the crawler output database and prefix:
 
-   ​	a. For **Database**, select the database created earlier, **nycitytaxianalysis-reinv17**.
+   ​	a. For **Database**, select the database created earlier, **nycitytaxianalysis-username**.
 
-   ​	b. For **Prefix added to tables (optional)**, type **reinv17_** and click on **Next**.
+   ​	b. For **Prefix added to tables (optional)**, type **username_** and click on **Next**.
 
    ​	c. Review configuration and click on **Finish** and on the next page, click on **Run it now** in the green box on the top. 
 
@@ -213,7 +213,7 @@ In regions where AWS Glue is supported, Athena uses the AWS Glue Data Catalog as
 
 4. You will now be re-directed to the AWS Glue console to set up a crawler. The crawler connects to your data store and automatically determines its structure to create the metadata for your table. Click on **Continue**.
 
-5. Enter Crawler name as **nycitytaxianalysis-crawlerparquet-reinv17** and Click **Next**.
+5. Enter Crawler name as **nycitytaxianalysis-crawlerparquet-username** and Click **Next**.
 
 6. Select Data store as **S3**.
 
@@ -229,17 +229,17 @@ In regions where AWS Glue is supported, Athena uses the AWS Glue Data Catalog as
 
 11. In Create a schedule for this crawler, pick frequency as **Run on demand** and click on **Next**.
 
-12. For Configure the crawler's output, Click **Add Database** and enter **nycitytaxianalysis-reinv17-parquet** as the database name and click **create**. For Prefix added to tables, you can enter a prefix **parq_** and click **Next**.
+12. For Configure the crawler's output, Click **Add Database** and enter **nycitytaxianalysis-username-parquet** as the database name and click **create**. For Prefix added to tables, you can enter a prefix **parq_** and click **Next**.
 
 13. Review the Crawler Info and click **Finish**. Click on **Run it Now?**. 
 
-14. Click on **Tables** on the left, and for database nycitytaxianalysis-reinv17-parquet you should see the table parq_target. Click on the table name and you will see the MetaData for this converted table. 
+14. Click on **Tables** on the left, and for database nycitytaxianalysis-username-parquet you should see the table parq_target. Click on the table name and you will see the MetaData for this converted table. 
 
 15. Open the [AWS Management console for Amazon Athena](https://us-west-2.console.aws.amazon.com/athena/home?force&region=us-west-2). 
 
     > Ensure you are in the **US West (Oregon)** region. 
 
-16. Under Database, you should see the database **nycitytaxianalysis-reinv17-parquet** which was just created. Select this database and you should see under Tables **parq_target**.
+16. Under Database, you should see the database **nycitytaxianalysis-username-parquet** which was just created. Select this database and you should see under Tables **parq_target**.
 
 17. In the query editor on the right, type
 
@@ -253,7 +253,7 @@ In regions where AWS Glue is supported, Athena uses the AWS Glue Data Catalog as
 
     What we see is the Run time and Data scanned numbers for Amazon Athena to **query and scan the parquet data**.
 
-18. Under Database, you should see the earlier made database **nycitytaxianalysis-reinv17** which was created in a previous section. Select this database and you should see under Tables **reinv17_yellow**. 
+18. Under Database, you should see the earlier made database **nycitytaxianalysis-username** which was created in a previous section. Select this database and you should see under Tables **reinv17_yellow**. 
 
 19. In the query editor on the right, type
 
