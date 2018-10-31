@@ -12,7 +12,7 @@
 ![architecture-overview-lab3.png](https://s3-us-west-2.amazonaws.com/reinvent2017content-abd313/lab3/Screen+Shot+2017-11-17+at+1.11.32+AM.png)
 
 
-##Note
+## Note
 Whereever you see "username" in the instructions ,put your name alias for reference 
 
 ## Create an IAM Role
