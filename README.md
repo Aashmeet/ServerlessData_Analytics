@@ -11,6 +11,10 @@
 ## Architectural Diagram
 ![architecture-overview-lab3.png](https://s3-us-west-2.amazonaws.com/reinvent2017content-abd313/lab3/Screen+Shot+2017-11-17+at+1.11.32+AM.png)
 
+
+##Note
+Whereever you see "username" in the instructions ,put your name alias for reference 
+
 ## Create an IAM Role
 
 Create an IAM role that has permission to your Amazon S3 sources, targets, temporary directory, scripts, **AWSGlueServiceRole** and any libraries used by the job. You can click [here](https://console.aws.amazon.com/iam/home?region=us-west-2#/roles) to create a new role. For additional documentation to create a role [here](docs.aws.amazon.com/cli/latest/reference/iam/create-role.html).
@@ -29,7 +33,7 @@ Create an IAM role that has permission to your Amazon S3 sources, targets, tempo
 6. Enter Role name as 
 
 ```
-nycitytaxianalysis-reinv
+nycitytaxianalysis-username
 ```
 
 ​	and click Finish.
